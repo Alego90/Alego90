@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<head>
+	<title>Formulario de solicitud de necesidades o insumos</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"></head>
+<link rel="stylesheet" href="style.css"> 
+<script src="scritp.js"></script>
+</head>
+<body>
+	<div class="container my-4">
+		
+			<h2>Formulario de solicitud de necesidades o insumos</h2>
+			<form>
+			  <div class="mb-3">
+				<label for="fechaSolicitud" class="form-label">Fecha de Solicitud</label>
+				<input type="date" class="form-control" id="fechaSolicitud">
+			  </div>
+			  <div class="mb-3">
+				<label for="solicitadoPor" class="form-label">Solicitado por</label>
+				<input type="text" class="form-control" id="solicitadoPor">
+			  </div>
+			  <div class="mb-3">
+				<label for="areaSolicitante" class="form-label">Área Solicitante</label>
+				<select class="form-select" id="areaSolicitante">
+				  <option selected disabled>Seleccione el área solicitante</option>
+				  <option value="calidad">Calidad</option>
+				  <option value="produccion">Producción</option>
+				  <option value="gerencia">Gerencia</option>
+				  <option value="comercial">Comercial</option>
+				</select>
+			  </div>
+			  <div class="mb-3">
+				<label for="solicitud" class="form-label">Solicitud</label>
+				<select class="form-select" id="solicitud">
+				  <option selected disabled>Seleccione el tipo de solicitud</option>
+				  <option value="infraestructura">Infraestructura</option>
+				  <option value="informacion">Información</option>
+				  <option value="d365-crm">D365-CRM</option>
+				  <option value="equipos">Equipos</option>
+				  <option value="otros">Otros</option>
+				</select>
+			  </div>
+			  <div class="mb-3" id="opcionesSolicitud">
+				<label for="opcion" class="form-label">Opciones</label>
+				<select class="form-select" id="opcion" >
+				  <option selected>Seleccione una opción</option>
+				</select>
+			  </div>
+			  <div class="mb-3" id="comentarios" style="display:none;">
+				<label for="otrosComentarios" class="form-label">Comentarios</label>
+				<textarea class="form-control" id="otrosComentarios" rows="3"></textarea>
+			  </div>
+			  <button type="submit" class="btn btn-primary">Enviar</button>
+			</form>
+		  </div>
+		  
+	</div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+
+</body>
+</html>
