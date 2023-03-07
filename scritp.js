@@ -7,7 +7,7 @@ seleccion.addEventListener("click", (e) => {
 		case "infraestructura":
 			opciones.innerHTML = "<opcion>Puntos de Red</opcion><option>Wifi</option><option>Reubicación de Equipos</option>";
 			break;
-		case "información":
+		case "informacion":
 			opciones.innerHTML = "<option>Consultas</option><option>Informes</option>";
 			break;
 		case "d365-crm":
@@ -30,3 +30,12 @@ seleccion.addEventListener("click", (e) => {
 			break;
 	}
 })
+
+// Función para mostrar el modal al enviar la solicitud
+function enviarSolicitud() {
+	$('#exampleModal').modal('show');
+  }
+  
+  // Agregar esta línea al evento onclick del botón de enviar solicitud
+  // Por ejemplo: <button type="button" class="btn btn-primary" onclick="enviarSolicitud()">Enviar Solicitud</button>
+  

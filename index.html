@@ -10,29 +10,39 @@
 <body>
 	<div class="container my-4">
 		
-			<h2>Formulario de solicitud de necesidades o insumos</h2>
-			<form>
+			<h2 class="text-center">Formulario Solicitudes De Necesidades O Insumos</h2>
+			<form class="form">
 			  <div class="mb-3">
 				<label for="fechaSolicitud" class="form-label">Fecha de Solicitud</label>
-				<input type="date" class="form-control" id="fechaSolicitud">
+				<input type="date" class="form-control" id="fechaSolicitud" name="fechaSolicitud" required>
 			  </div>
 			  <div class="mb-3">
 				<label for="solicitadoPor" class="form-label">Solicitado por</label>
-				<input type="text" class="form-control" id="solicitadoPor">
+				<input type="text" class="form-control" id="solicitadoPor" name="solicitadoPor">
 			  </div>
 			  <div class="mb-3">
 				<label for="areaSolicitante" class="form-label">Área Solicitante</label>
-				<select class="form-select" id="areaSolicitante">
+				<select class="form-select" id="areaSolicitante" name="areaSolicitante" required>
 				  <option selected disabled>Seleccione el área solicitante</option>
-				  <option value="calidad">Calidad</option>
+				  <option value="ventas">Administración de Ventas</option>
+				  <option value="aplicaciones">Centro De Aplicaciones</option>
+				  <option value="mantenimiento">Mantenimiento</option> 
+				  <option value="transportes">Transportes</option>
+				  <option value="laboratorio">Laboratorio</option>
 				  <option value="produccion">Producción</option>
+				  <option value="logistica">Logística</option>
 				  <option value="gerencia">Gerencia</option>
-				  <option value="comercial">Comercial</option>
+				  <option value="calidad">Calidad</option>
+				  <option value="compras">Compras</option>
+
+
+				  
+				
 				</select>
 			  </div>
 			  <div class="mb-3">
 				<label for="solicitud" class="form-label">Solicitud</label>
-				<select class="form-select" id="solicitud">
+				<select class="form-select" id="solicitud" >
 				  <option selected disabled>Seleccione el tipo de solicitud</option>
 				  <option value="infraestructura">Infraestructura</option>
 				  <option value="informacion">Información</option>
@@ -51,14 +61,34 @@
 				<label for="otrosComentarios" class="form-label">Comentarios</label>
 				<textarea class="form-control" id="otrosComentarios" rows="3"></textarea>
 			  </div>
-			  <button type="submit" class="btn btn-primary">Enviar</button>
+			  <div class="d-grid gap-2 col-6 mx-auto">
+				
+				<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+					Enviar Solicitud
+				  </button>
+			  </div>
 			</form>
 		  </div>
 		  
 	</div>
-    
-
-
+ 
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="exampleModalLabel"><img src="img/icon-1.jpg" width="70" height="60" alt=""></h5>
+		  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		</div>
+		<div class="modal-body">
+		  Su solicitud ha sido enviada correctamente.
+		</div>
+		<div class="modal-footer">
+		  <button type="button" class="btn btn-info" data-bs-dismiss="modal">Cerrar</button>
+		</div>
+	  </div>
+	</div>
+  </div>
 
 
 
