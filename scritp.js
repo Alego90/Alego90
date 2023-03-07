@@ -30,5 +30,3 @@ seleccion.addEventListener("click", (e) => {
 			break;
 	}
 })
-
-  
